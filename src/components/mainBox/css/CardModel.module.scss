@@ -1,0 +1,26 @@
+.model {
+  :global {
+    .ant-modal-content {
+      .ant-modal-header {
+        .ant-modal-title {
+          color: #0d2f3f;
+          font-size: 25px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+.model-title {
+  margin-bottom: 10px;
+  > span {
+    color: #0d2f3f;
+    font-weight: 600;
+    font-size: 20px;
+    display: block;
+  }
+  > p {
+    color: #4b5a5f;
+    font-size: 16px;
+  }
+}
