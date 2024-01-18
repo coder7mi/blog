@@ -1,16 +1,25 @@
 {
   "files": {
-    "main.css": "./static/css/main.f855e6bc.css",
-    "main.js": "./static/js/main.0ac6090d.js",
-    "static/js/787.774594b4.chunk.js": "./static/js/787.774594b4.chunk.js",
-    "static/media/logo.svg": "./static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "./static/css/main.a22ebed6.css",
+    "main.js": "./static/js/main.bac5ad69.js",
+    "static/media/gmf-pc.png": "./static/media/gmf-pc.df5b8e3c0fa7dc3d0e2e.png",
+    "static/media/uca-admin.png": "./static/media/uca-admin.ed38d321e4be57287270.png",
+    "static/media/uca-pc.png": "./static/media/uca-pc.fd8c4840552bdc56efd3.png",
+    "static/media/user.jpg": "./static/media/user.99bae1441ee036ce54ed.jpg",
+    "static/media/gmf-mobile.png": "./static/media/gmf-mobile.096fd188783345122c4a.png",
+    "static/media/uca-admin-2.png": "./static/media/uca-admin-2.1ff0de091570a251a402.png",
+    "static/media/gmf-admin.png": "./static/media/gmf-admin.9227e8cfa0d245091d22.png",
+    "static/media/uca-admin-3.png": "./static/media/uca-admin-3.27af28b1c69e2f24c9de.png",
+    "static/media/gmf-admin-detail.png": "./static/media/gmf-admin-detail.813eb27d55f145dc0bfb.png",
+    "static/media/uca-admin-1.png": "./static/media/uca-admin-1.b5d0b87b71adbaaf1f14.png",
+    "static/media/uca-pc-2.png": "./static/media/uca-pc-2.234a0e1d515c9319d0ef.png",
+    "static/media/uca-pc-1.png": "./static/media/uca-pc-1.801d2bcdfdc65d2fe14b.png",
     "index.html": "./index.html",
-    "main.f855e6bc.css.map": "./static/css/main.f855e6bc.css.map",
-    "main.0ac6090d.js.map": "./static/js/main.0ac6090d.js.map",
-    "787.774594b4.chunk.js.map": "./static/js/787.774594b4.chunk.js.map"
+    "main.a22ebed6.css.map": "./static/css/main.a22ebed6.css.map",
+    "main.bac5ad69.js.map": "./static/js/main.bac5ad69.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.0ac6090d.js"
+    "static/css/main.a22ebed6.css",
+    "static/js/main.bac5ad69.js"
   ]
 }
