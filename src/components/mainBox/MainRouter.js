@@ -5,8 +5,8 @@ import Home from '../../views/mainBox/home/Home'
 export default function MainRouter() {
   return (
     <Switch>
-      <Route path="/home" component={Home} />
-      <Redirect from="/" to="/home" />
+      <Route path="/blog" component={Home} />
+      <Redirect from="/" to="/blog" />
     </Switch>
   )
 }
