@@ -214,3 +214,227 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .home {
+    width: 100%;
+
+    /* ----------------------------------- 开始 ----------------------------------- */
+    .start {
+      height: 100vh;
+      background-color: #f8f7f1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      .img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+      }
+      .desc {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .title {
+          font-size: 22px;
+          font-weight: bold;
+          color: #0d2f3f;
+          margin: auto;
+          mask: radial-gradient(circle at 0 50%, #000, transparent 10%, transparent 0);
+          mask-size: 100%;
+          animation: scale 5s infinite;
+        }
+        .text {
+          margin-top: 10px;
+          color: #4b5a5f;
+          font-size: 11px;
+          width: fit-content;
+          border-right: 0.2em solid;
+          white-space: nowrap;
+          overflow: hidden;
+          animation: typing 3s steps(26, end), cursor-blink 0.3s step-end infinite alternate;
+        }
+        .button {
+          width: fit-content;
+          margin-top: 15px;
+          cursor: pointer;
+          position: relative;
+          padding: 5px 12px;
+          font-size: 14px;
+          color: #edb33c;
+          border: 2px solid #edb33c;
+          border-radius: 17px;
+          background-color: transparent;
+          font-weight: 600;
+          transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+          overflow: hidden;
+          &::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            margin: auto;
+            width: 50px;
+            height: 50px;
+            border-radius: inherit;
+            scale: 0;
+            z-index: -1;
+            background-color: #edb33c;
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+          }
+          &:hover::before {
+            scale: 3;
+          }
+          &:hover {
+            color: #fff;
+            scale: 1.1;
+            box-shadow: 0 0px 10px rgba(193, 163, 98, 0.4);
+          }
+          &:active {
+            scale: 1;
+          }
+        }
+      }
+    }
+
+    // 首页模块相关动画
+    @keyframes scale {
+      50%,
+      100% {
+        mask-size: 2000%;
+      }
+    }
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+    }
+
+    @keyframes cursor-blink {
+      50% {
+        border-color: transparent;
+      }
+    }
+
+    /* ----------------------------------- 关于 ----------------------------------- */
+    .about {
+      min-height: 100vh;
+      padding: 70px 20px;
+      position: relative;
+      background-color: #eebf49;
+      overflow: hidden;
+      z-index: 2;
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        min-width: 300vw;
+        min-height: 300vw;
+        background-color: #fff;
+        animation-name: rotate;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        z-index: -1;
+      }
+
+      &:before {
+        bottom: 15vh;
+        border-radius: 45%;
+        animation-duration: 10s;
+      }
+
+      &:after {
+        bottom: 12vh;
+        opacity: 0.5;
+        border-radius: 47%;
+        animation-duration: 10s;
+      }
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: translate(-50%, 0) rotateZ(0deg);
+      }
+      50% {
+        transform: translate(-50%, -2%) rotateZ(180deg);
+      }
+      100% {
+        transform: translate(-50%, 0%) rotateZ(360deg);
+      }
+    }
+
+    .subTitle {
+      color: #0d2f3f;
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .collapse {
+      :global {
+        .ant-collapse-item {
+          .ant-collapse-header {
+            padding: 5px 8px;
+            color: #0d2f3f;
+            font-size: 14px;
+            .ant-collapse-expand-icon {
+              height: 24px;
+              .ant-collapse-arrow {
+                color: #0d2f3f;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+      .collapse-item {
+        display: flex;
+        align-items: flex-start;
+        .collapse-icon {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          color: #fff;
+          text-align: center;
+          line-height: 30px;
+          font-size: 12px;
+          margin-right: 20px;
+          &.web {
+            background-color: #286f6c;
+          }
+          &.mobile {
+            background-color: #f26440;
+          }
+        }
+        .collapse-text {
+          flex: 1;
+          color: #0d2f3f;
+          font-size: 12px;
+          line-height: 25px;
+        }
+      }
+    }
+
+    /* ----------------------------------- 项目 ----------------------------------- */
+    .project {
+      min-height: 100vh;
+      background-color: #f8f7f1;
+      padding: 70px 20px;
+      .card-meta {
+        :global {
+          .ant-card-meta-detail {
+            .ant-card-meta-title {
+              color: #0d2f3f;
+            }
+            .ant-card-meta-description {
+              color: #404648;
+            }
+          }
+        }
+      }
+    }
+  }
+}

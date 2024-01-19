@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import style from './Home.module.scss'
 import { CaretRightOutlined, DesktopOutlined, MobileOutlined } from '@ant-design/icons'
 import { Collapse, theme, Card, Col, Row, Image, Tooltip } from 'antd'
@@ -18,6 +18,7 @@ import CardModel from '../../../components/mainBox/CardModel'
 import ToTopBtn from '../../../components/mainBox/ToTopBtn'
 import TopHeader from '../../../components/mainBox/home/TopHeader'
 import FindMe from '../../../components/mainBox/home/FindMe'
+import { useWindowSize } from '../../../hooks/useWindowSize'
 
 const { Meta } = Card
 
@@ -144,6 +145,18 @@ export default function Home() {
     aboutRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
 
+  // 监听视口宽度
+  const { width, height } = useWindowSize()
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    if (width < 768) {
+      setIsMobile(true)
+    } else {
+      setIsMobile(false)
+    }
+  }, [width])
+
   return (
     <div className={style.home}>
       {/* 头部 */}
@@ -188,7 +201,7 @@ export default function Home() {
         <Row gutter={[20, 20]}>
           {cardList.map((item, index) => {
             return (
-              <Col span={8} key={item.id}>
+              <Col span={isMobile ? 24 : 8} key={item.id}>
                 <Card hoverable cover={<Image width={'100%'} height={'270px'} src={item.src} />}>
                   <Meta
                     className={style['card-meta']}
