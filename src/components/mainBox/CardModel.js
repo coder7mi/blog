@@ -36,10 +36,6 @@ export default function CardModel(props) {
           <a href={props.data?.href}>{props.data?.href}</a>
         </div>
       )}
-      <div className={style['model-title']}>
-        <span>负责模块:</span>
-        <p>{props.data?.module}</p>
-      </div>
 
       <div className={style['model-title']}>
         <span>图片展示:</span>
