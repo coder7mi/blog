@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.ffe459e6.css",
-    "main.js": "./static/js/main.ed5a0335.js",
+    "main.js": "./static/js/main.09ebd43e.js",
     "static/media/gmf-pc.png": "./static/media/gmf-pc.df5b8e3c0fa7dc3d0e2e.png",
     "static/media/uca-admin.png": "./static/media/uca-admin.ed38d321e4be57287270.png",
     "static/media/uca-pc.png": "./static/media/uca-pc.fd8c4840552bdc56efd3.png",
@@ -16,10 +16,10 @@
     "static/media/uca-pc-1.png": "./static/media/uca-pc-1.801d2bcdfdc65d2fe14b.png",
     "index.html": "./index.html",
     "main.ffe459e6.css.map": "./static/css/main.ffe459e6.css.map",
-    "main.ed5a0335.js.map": "./static/js/main.ed5a0335.js.map"
+    "main.09ebd43e.js.map": "./static/js/main.09ebd43e.js.map"
   },
   "entrypoints": [
     "static/css/main.ffe459e6.css",
-    "static/js/main.ed5a0335.js"
+    "static/js/main.09ebd43e.js"
   ]
 }
