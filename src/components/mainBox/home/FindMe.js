@@ -8,7 +8,7 @@ import yellowMan from '../../../static/lottie/yellow-man.json'
 const list = [
   {
     icon: 'icon-github',
-    link: 'https://github.com/jiangshit'
+    link: 'https://github.com/coder7mi'
   },
   {
     icon: 'icon-juejin',
